@@ -1,0 +1,132 @@
+<!-- fragment_edit_name.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#6F2739"
+    android:minWidth="300dp"
+    android:minHeight="500dp"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/suspendPC"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#C74BF1"
+        android:text="Suspend PC"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnOffPC" />
+
+    <TextView
+        android:id="@+id/mouseSensitivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Volume"
+        android:textColor="@color/slider_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.marcinmoskala.arcseekbar.ArcSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:progressBackgroundColor="@color/slider_background"
+        app:progressBackgroundWidth="4dp" />
+
+    <Button
+        android:id="@+id/muteSwitch"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#C74BF1"
+        android:checked="false"
+        android:text="Mute"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/screen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C74BF1"
+        android:checked="true"
+        android:text="Screen1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/screen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="129dp"
+        android:backgroundTint="#C74BF1"
+        android:checked="true"
+        android:text="Screen2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/screen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#C74BF1"
+        android:checked="true"
+        android:text="Screen3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/turnOffPC"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#C74BF1"
+        android:text="Turn off PC"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/watchTV"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#C74BF1"
+        android:text="WatchTV"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

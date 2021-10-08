@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F2796"
+    >
+
+    <TableRow
+        android:id="@+id/tr_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/messageTextField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="Enter message"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:backgroundTint="#C74BF1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="sendButton"
+            android:text="Send" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/mousePad"
+        android:layout_width="match_parent"
+        android:layout_height="421dp"
+        android:layout_below="@+id/tr_send_message"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="93dp"
+        android:background="#6F2739"
+        android:clickable="true"
+        android:onClick="onTouch" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#C74BF1"
+        android:onClick="sendPlay"
+        android:text="PLAY"
+        android:textSize="5sp" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#C74BF1"
+        android:onClick="sendDown"
+        android:text="DOWN"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="42dp"
+        android:backgroundTint="#C74BF1"
+        android:onClick="sendUp"
+        android:text="UP"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/mousePad"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="-88dp"
+        android:backgroundTint="#C74BF1"
+        android:text="Settings"
+        android:textSize="5sp" />
+
+    <Button
+        android:id="@+id/leftMouseClick"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#C74BF1"
+        android:onClick="sendLeftMouseClick"
+        android:text="L-Click" />
+
+    <Button
+        android:id="@+id/rightMouseClick"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#C74BF1"
+        android:onClick="sendRightMouseClick"
+        android:text="R-Click" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+1. Create server DONE
+2. create client DONE
+3. get control of mouse through phone DONE
+    3.1 Implement Robot DONE
+koppla värde till en knapp t.ex "play" DONE
+skicka det värdet till en server DONE
+implement scroll DONE
+
+create feature to change mousePointerSpeed
+create a button that presses: CTRL+ALT+0
+create a button that presses: CTRL+ALT++
+
+create a button that presses: WIN+VÄNSTERPIL, WIN+NERPIL, WIN+HÖGERPIL
+create a button that presses: ALT+VÄNSTERPIL, ALT+NERPIL, ALT+HÖGERPIL
+
+turn off computer button
+lower volume button
+
+turn on tv
+
+Ideas:
+implement screen share feature
+implement a way to send pictures from phone to PC
